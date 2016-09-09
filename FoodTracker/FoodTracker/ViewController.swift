@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBAction func setLabelText(_ sender: UIButton) {
-    
+        //What to do when the button is pressed
+        //Changing label to what is in the text field
+        mealNameLabel.text = nameTextField.text
+        
     }
     
     override func viewDidLoad() {
