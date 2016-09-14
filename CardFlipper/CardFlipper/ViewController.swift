@@ -23,10 +23,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func changeImageView(_ sender: AnyObject) {
+        var stop=1;
         if(cardImageView.image==#imageLiteral(resourceName: "Face")){
             cardImageView.image=#imageLiteral(resourceName: "Back")
+            stop=2;
         }
-        if(cardImageView.image==#imageLiteral(resourceName: "Back")){
+        if(cardImageView.image==#imageLiteral(resourceName: "Back")&&stop==1){
             cardImageView.image=#imageLiteral(resourceName: "Face")
         }
     }
