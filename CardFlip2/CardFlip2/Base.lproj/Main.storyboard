@@ -266,29 +266,108 @@
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="ZyE-ci-ayw" id="f1f-S2-dRi"/>
+                        <outlet property="cardImageView1" destination="ZyE-ci-ayw" id="ZlA-cM-rSP"/>
+                        <outlet property="cardImageView10" destination="pYq-ZA-V9W" id="mHZ-ed-v5v"/>
+                        <outlet property="cardImageView11" destination="SlU-DJ-pc8" id="0Y9-gk-V2C"/>
+                        <outlet property="cardImageView12" destination="5zt-Lq-kUC" id="vej-xQ-vHC"/>
+                        <outlet property="cardImageView13" destination="Thh-RT-DXl" id="PGl-4x-wef"/>
+                        <outlet property="cardImageView14" destination="P0a-dd-BdI" id="c3s-i9-eVH"/>
+                        <outlet property="cardImageView15" destination="lpK-HH-56T" id="9Fc-7z-2x5"/>
+                        <outlet property="cardImageView16" destination="fHj-au-tFV" id="SkQ-ei-Nx9"/>
+                        <outlet property="cardImageView2" destination="7xi-9w-7XX" id="hUT-4U-vjc"/>
+                        <outlet property="cardImageView3" destination="UzG-U6-5vr" id="oah-Vy-aHg"/>
+                        <outlet property="cardImageView4" destination="jnS-Xk-rok" id="V3P-YV-8nB"/>
+                        <outlet property="cardImageView5" destination="hNJ-vj-WIT" id="bzb-mG-GD1"/>
+                        <outlet property="cardImageView6" destination="smW-sK-WeB" id="E7u-hH-SY9"/>
+                        <outlet property="cardImageView7" destination="fnt-lm-Qzl" id="dRr-MC-tm5"/>
+                        <outlet property="cardImageView9" destination="zRg-DN-nJP" id="Ipm-DX-dM1"/>
+                        <outlet property="changeImage2" destination="lBj-ZD-ZwJ" id="9m9-Gi-loQ"/>
+                        <outlet property="changeImage3" destination="Tvd-V3-jGq" id="JbT-Uk-Dj5"/>
+                        <outlet property="changeImage8" destination="Zzh-ir-mwU" id="L3Q-JJ-5Yo"/>
+                        <outlet property="flipsLabel" destination="rsh-Ko-lXD" id="CGd-03-jyj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Jdf-Kg-lns">
                     <connections>
-                        <action selector="changeImageView:" destination="BYZ-38-t0r" id="t1g-JQ-R9l"/>
+                        <action selector="changeImage1:" destination="BYZ-38-t0r" id="SCY-b9-VSt"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="lBj-ZD-ZwJ"/>
-                <tapGestureRecognizer id="Tvd-V3-jGq"/>
-                <tapGestureRecognizer id="RXe-oo-uQI"/>
-                <tapGestureRecognizer id="bx8-Fl-MRM"/>
-                <tapGestureRecognizer id="Zky-vd-RBS"/>
-                <tapGestureRecognizer id="pfn-1d-A8p"/>
-                <tapGestureRecognizer id="Zzh-ir-mwU"/>
-                <tapGestureRecognizer id="qkl-x5-hmv"/>
-                <tapGestureRecognizer id="0N1-qT-3dI"/>
-                <tapGestureRecognizer id="poW-Yo-HxZ"/>
-                <tapGestureRecognizer id="WQD-Ec-AkL"/>
-                <tapGestureRecognizer id="ic8-kR-3tF"/>
-                <tapGestureRecognizer id="BuU-f9-dCv"/>
-                <tapGestureRecognizer id="O0S-ad-fyS"/>
-                <tapGestureRecognizer id="pnM-7V-Dmm"/>
+                <tapGestureRecognizer id="lBj-ZD-ZwJ">
+                    <connections>
+                        <action selector="changeImage2:" destination="BYZ-38-t0r" id="CR5-0g-Zdp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Tvd-V3-jGq">
+                    <connections>
+                        <action selector="changeImage3:" destination="BYZ-38-t0r" id="z5A-KF-rlL"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RXe-oo-uQI">
+                    <connections>
+                        <action selector="changeImage4:" destination="BYZ-38-t0r" id="YeO-sh-fvj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bx8-Fl-MRM">
+                    <connections>
+                        <action selector="changeImage5:" destination="BYZ-38-t0r" id="qAr-AQ-cJu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Zky-vd-RBS">
+                    <connections>
+                        <action selector="changeImage6:" destination="BYZ-38-t0r" id="d19-fm-CnR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pfn-1d-A8p">
+                    <connections>
+                        <action selector="changeImage7:" destination="BYZ-38-t0r" id="bwY-v6-rDy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Zzh-ir-mwU">
+                    <connections>
+                        <action selector="changeImage8:" destination="BYZ-38-t0r" id="bS6-F9-Qvh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qkl-x5-hmv">
+                    <connections>
+                        <action selector="changeImage9:" destination="BYZ-38-t0r" id="cQP-Bu-9j5"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0N1-qT-3dI">
+                    <connections>
+                        <action selector="changeImage10:" destination="BYZ-38-t0r" id="JnQ-F4-Mac"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="poW-Yo-HxZ">
+                    <connections>
+                        <action selector="changeImage11:" destination="BYZ-38-t0r" id="pQA-8A-Ep8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="WQD-Ec-AkL">
+                    <connections>
+                        <action selector="changeImage12:" destination="BYZ-38-t0r" id="raV-Ep-Jcu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ic8-kR-3tF">
+                    <connections>
+                        <action selector="changeImage13:" destination="BYZ-38-t0r" id="A0W-HR-FR9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BuU-f9-dCv">
+                    <connections>
+                        <action selector="changeImage14:" destination="BYZ-38-t0r" id="Jcu-Pq-tLs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="O0S-ad-fyS">
+                    <connections>
+                        <action selector="changeImage15:" destination="BYZ-38-t0r" id="b15-A5-vQq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pnM-7V-Dmm">
+                    <connections>
+                        <action selector="changeImage16:" destination="BYZ-38-t0r" id="pxY-kx-OjL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="134" y="140"/>
         </scene>
