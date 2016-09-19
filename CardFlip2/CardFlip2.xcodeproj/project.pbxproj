@@ -505,6 +505,7 @@
 				4B53CFB81D89CCAF0090BFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B53CFB91D89CCAF0090BFFC /* Build configuration list for PBXNativeTarget "CardFlip2Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				4B53CFBB1D89CCAF0090BFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B53CFBC1D89CCAF0090BFFC /* Build configuration list for PBXNativeTarget "CardFlip2UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				4B53CFBE1D89CCAF0090BFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
