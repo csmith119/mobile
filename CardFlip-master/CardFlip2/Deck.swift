@@ -13,6 +13,7 @@ class Card{
     var value:String
     var suit:String
     var isShowing: Bool
+    var isMatched: Bool
     
     var frontImage:UIImage
     var backImage=#imageLiteral(resourceName: "back")
@@ -22,6 +23,7 @@ class Card{
         self.value = value
         self.suit = suit
         self.isShowing = false
+        self.isMatched = false
         self.frontImage = UIImage(named: "\(value)_\(suit)")!
         self.text = "\(value) of \(suit)"
     }
