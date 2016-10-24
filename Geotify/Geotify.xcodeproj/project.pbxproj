@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3E217D1DBE8C3A00916EBF /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E217C1DBE8C3A00916EBF /* Utilities.swift */; };
 		4B61B3B21DBDDC2D00074CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B61B3B11DBDDC2D00074CAA /* AppDelegate.swift */; };
 		4B61B3B71DBDDC2D00074CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B61B3B51DBDDC2D00074CAA /* Main.storyboard */; };
 		4B61B3B91DBDDC2D00074CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B61B3B81DBDDC2D00074CAA /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B3E217C1DBE8C3A00916EBF /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4B61B3AE1DBDDC2D00074CAA /* Geotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B61B3B11DBDDC2D00074CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B61B3B61DBDDC2D00074CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4B61B3BA1DBDDC2D00074CAA /* LaunchScreen.storyboard */,
 				4B61B3BD1DBDDC2D00074CAA /* Info.plist */,
 				4B61B3E11DBDE34800074CAA /* AddGeoficationTableViewController.swift */,
+				4B3E217C1DBE8C3A00916EBF /* Utilities.swift */,
 			);
 			path = Geotify;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				4B61B3E21DBDE34800074CAA /* AddGeoficationTableViewController.swift in Sources */,
 				4B61B3E01DBDDF2800074CAA /* ViewController.swift in Sources */,
+				4B3E217D1DBE8C3A00916EBF /* Utilities.swift in Sources */,
 				4B61B3B21DBDDC2D00074CAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +513,7 @@
 				4B61B3D81DBDDC2D00074CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B61B3D91DBDDC2D00074CAA /* Build configuration list for PBXNativeTarget "GeotifyTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				4B61B3DB1DBDDC2D00074CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B61B3DC1DBDDC2D00074CAA /* Build configuration list for PBXNativeTarget "GeotifyUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				4B61B3DE1DBDDC2D00074CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

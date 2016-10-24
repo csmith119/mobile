@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pKI-Qj-0r4"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pKI-Qj-0r4"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -31,8 +31,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Geotifications(0)" id="W7r-eL-cd3">
-                        <barButtonItem key="leftBarButtonItem" image="31286055-4784-463B-9372-309EA512A54B" id="Gfe-sI-FNr">
+                        <barButtonItem key="leftBarButtonItem" image="1E2D0F74-1872-44D1-A39E-5F6CE8A46B67" id="Gfe-sI-FNr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="zoomToCurrentLocation:" destination="BYZ-38-t0r" id="jPj-Db-0bc"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cyf-pi-bq8">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,16 +77,24 @@
                                                     </segments>
                                                     <color key="tintColor" red="1" green="0.44429730661933264" blue="0.42161720507751166" alpha="1" colorSpace="calibratedRGB"/>
                                                 </segmentedControl>
-                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2ns-Kc-eWZ"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedPin" translatesAutoresizingMaskIntoConstraints="NO" id="ipi-0w-JzM">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="D0h-Cr-yKM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ns-Kc-eWZ"/>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="2ns-Kc-eWZ" secondAttribute="trailing" id="6rO-xF-LF8"/>
                                                 <constraint firstItem="2ns-Kc-eWZ" firstAttribute="leading" secondItem="tTK-Sj-mGL" secondAttribute="leadingMargin" id="8Rz-WG-XgM"/>
+                                                <constraint firstItem="ipi-0w-JzM" firstAttribute="leading" secondItem="tTK-Sj-mGL" secondAttribute="leadingMargin" constant="59" id="GY4-s4-LRG"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="2ns-Kc-eWZ" secondAttribute="bottom" id="Ket-Nl-2Gd"/>
                                                 <constraint firstItem="v0l-Fd-DpD" firstAttribute="top" secondItem="tTK-Sj-mGL" secondAttribute="topMargin" constant="8" id="Z0F-1g-Ljq"/>
+                                                <constraint firstItem="ipi-0w-JzM" firstAttribute="centerX" secondItem="v0l-Fd-DpD" secondAttribute="centerX" id="cpl-If-im2"/>
                                                 <constraint firstItem="2ns-Kc-eWZ" firstAttribute="top" secondItem="v0l-Fd-DpD" secondAttribute="bottom" constant="8" id="dNa-m4-8pr"/>
                                                 <constraint firstItem="v0l-Fd-DpD" firstAttribute="trailing" secondItem="tTK-Sj-mGL" secondAttribute="trailingMargin" id="e9C-Ie-54g"/>
                                                 <constraint firstItem="v0l-Fd-DpD" firstAttribute="leading" secondItem="tTK-Sj-mGL" secondAttribute="leadingMargin" id="hyv-QP-V0R"/>
+                                                <constraint firstItem="ipi-0w-JzM" firstAttribute="centerY" secondItem="2ns-Kc-eWZ" secondAttribute="centerY" id="oPK-kh-ngb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -159,12 +170,24 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Add" id="dfv-n0-oIx">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="addGeofication:" destination="We9-i7-KBK" id="XAT-wq-wSr"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="CurrentLocation" id="A1G-5D-qGg">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="zoomToCurrentLocation:" destination="We9-i7-KBK" id="Fuo-Aj-LS5"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryOrExitSegmentControl" destination="v0l-Fd-DpD" id="G54-YR-hLq"/>
+                        <outlet property="mapView" destination="2ns-Kc-eWZ" id="o5b-xD-uWA"/>
+                        <outlet property="noteTextField" destination="4wC-7Y-VqR" id="1sF-hC-VLe"/>
+                        <outlet property="radiusTextField" destination="UIm-ai-8CQ" id="r1w-8Z-sqN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2s-hE-DZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,7 +198,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RLa-LI-1WM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="UnK-Lq-TaY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="UnK-Lq-TaY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.55363364355682998" blue="0.53051081919908438" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,7 +233,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="31286055-4784-463B-9372-309EA512A54B" width="15" height="15">
+        <image name="1E2D0F74-1872-44D1-A39E-5F6CE8A46B67" width="15" height="15">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -277,5 +300,6 @@ DcYNyQ3OAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAADdA
 </mutableData>
         </image>
         <image name="CurrentLocation" width="15" height="15"/>
+        <image name="RedPin" width="75" height="75"/>
     </resources>
 </document>

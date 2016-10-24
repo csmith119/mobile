@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import MapKit
 
 class AddGeoficationTableViewController: UITableViewController {
     @IBAction func OnCancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBOutlet weak var entryOrExitSegmentControl: UISegmentedControl!
+    @IBOutlet weak var noteTextField: UITextField!
+    @IBOutlet weak var radiusTextField: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +28,11 @@ class AddGeoficationTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    @IBAction func addGeofication(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func zoomToCurrentLocation(_ sender: UIBarButtonItem) {
+        mapView.zoomToUserLocation()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
